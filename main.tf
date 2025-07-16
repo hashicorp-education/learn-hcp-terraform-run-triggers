@@ -3,7 +3,7 @@ provider "aws" {
 }
 
 data "tfe_outputs" "source_workspace" {
-  workspace    = "learn-hcp-terraform"
+  workspace    = var.workspace_name
   organization = var.organization_name
 }
 
